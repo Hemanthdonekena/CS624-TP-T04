@@ -1,22 +1,30 @@
-// screens/UserScreens.js
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, StyleSheet } from 'react-native';
 import { useApp } from '../context/AppContext';
+import { AppButton, RestaurantCard, CartItem, Header } from '../components/UIComponents';
 
-export const ProfileScreen = () => {
+export default function UserScreen({ navigation }) {
   const { user, logout } = useApp();
 
   return (
-    <View style={{ padding: 20 }}>
-      <Text>Profile</Text>
-      {user ? (
-        <>
-          <Text>Email: {user.email}</Text>
-          <Button title="Logout" onPress={logout} />
-        </>
-      ) : (
-        <Text>No user logged in</Text>
-      )}
+    <View style={styles.container}>
+      <Text style={styles.title}>Welcome, {user?.email || 'Guest'}!</Text>
+      <Button title="Logout" onPress={() => {
+        logout();
+        navigation.navigate('Login');
+      }} />
     </View>
   );
-};
+}
+
+const styles = StyleSheet.create({
+  container: {
+    padding: 20,
+    flex: 1
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginBottom: 20
+  }
+});

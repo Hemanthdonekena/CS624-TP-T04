@@ -1,0 +1,85 @@
+food-delivery-app/
+│── assets/                     # Static assets (images, icons, etc.)
+│── src/                         # Source code
+│   ├── components/              # Reusable UI components
+│   │   ├── Button.js
+│   │   ├── RestaurantCard.js
+│   │   ├── CartItem.js
+│   │   ├── OrderStatus.js
+│   │   ├── Header.js
+│   │   ├── InputField.js
+│   │   ├── Loader.js
+│   │   ├── SearchBar.js
+│   │   ├── RatingStars.js
+│   │   ├── MenuItem.js
+│   │   ├── OrderTracker.js
+│   │   ├── Footer.js
+│   │   ├── Navbar.js
+│   │   ├── CategoryFilter.js
+│   │   ├── EmptyState.js
+│   │   ├── NotificationBadge.js
+│   │   ├── ProfileAvatar.js
+│   ├── screens/                 # App screens (pages)
+│   │   ├── LoginScreen.js
+│   │   ├── RegisterScreen.js
+│   │   ├── HomeScreen.js
+│   │   ├── RestaurantListScreen.js
+│   │   ├── MenuScreen.js
+│   │   ├── CartScreen.js
+│   │   ├── CheckoutScreen.js
+│   │   ├── OrderTrackingScreen.js
+│   │   ├── ProfileScreen.js
+│   │   ├── SettingsScreen.js
+│   │   ├── FavoritesScreen.js
+│   │   ├── SearchScreen.js
+│   │   ├── NotificationsScreen.js
+│   │   ├── HelpCenterScreen.js
+│   ├── navigation/               # Navigation setup
+│   │   ├── AppNavigator.js
+│   │   ├── AuthNavigator.js
+│   │   ├── MainNavigator.js
+│   │   ├── TabNavigator.js
+│   │   ├── DrawerNavigator.js
+│   ├── context/                  # Global state management (React Context)
+│   │   ├── AuthContext.js
+│   │   ├── CartContext.js
+│   │   ├── OrderContext.js
+│   │   ├── UserContext.js
+│   ├── firebase/                  # Firebase configuration & services
+│   │   ├── firebaseConfig.js
+│   │   ├── authService.js
+│   │   ├── orderService.js
+│   │   ├── restaurantService.js
+│   │   ├── userService.js
+│   ├── utils/                     # Utility functions
+│   │   ├── formatCurrency.js
+│   │   ├── validateEmail.js
+│   │   ├── capitalizeFirstLetter.js
+│   │   ├── getEstimatedDeliveryTime.js
+│   │   ├── generateOrderID.js
+│   ├── styles/                    # Global styles
+│   │   ├── colors.js
+│   │   ├── fonts.js
+│   │   ├── globalStyles.js
+│   ├── config/                     # App-wide configurations
+│   │   ├── appConfig.js
+│   │   ├── env.js
+│   ├── hooks/                      # Custom React hooks
+│   │   ├── useAuth.js
+│   │   ├── useCart.js
+│   │   ├── useOrders.js
+│   │   ├── useRestaurants.js
+│   ├── data/                       # Static data (mock data)
+│   │   ├── restaurantData.js
+│   │   ├── menuData.js
+│   │   ├── categoryData.js
+│   ├── assets/                     # Images, icons, fonts
+│   ├── App.js                      # Main entry point
+│   ├── package.json                 # Dependencies & scripts
+│   ├── README.md                    # Project documentation
+│   ├── .gitignore                    # Git ignored files
+│   ├── .eslintrc.js                  # ESLint configuration
+│   ├── babel.config.js               # Babel configuration
+│   ├── metro.config.js               # Metro bundler configuration
+│   ├── app.json                      # Expo configuration
+│   ├── index.js                      # Entry point for React Native
